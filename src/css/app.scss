@@ -1,0 +1,63 @@
+// app global css in SCSS form
+.form-container {
+  margin-top: 1rem;
+  .q-field {
+    margin: 0.5rem;
+  }
+}
+
+.my-sticky-header-table {
+  /* height or max-height is important */
+  max-height: 800px;
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th {
+    /* bg color is important for th; just specify one */
+    background-color: white;
+  }
+
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+  }
+  thead tr:first-child th {
+    top: 0;
+  }
+
+  /* this is when the loading indicator appears */
+  &.q-table--loading thead tr:last-child th {
+    /* height of all previous header rows */
+    top: 48px;
+  }
+}
+.q-table td.wrap,
+.q-table th.wrap {
+  /* don't shorten cell contents */
+  white-space: break-spaces;
+  max-width: 10rem;
+
+  @media (max-width: $breakpoint-md-min) {
+    overflow: scroll;
+    hyphens: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  .my-sticky-header-table .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th {
+    background-color: var(--q-dark) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: whitesmoke;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "planets": {
+    "title": "Planets",
+    "grid": {
+      "columns": {
+        "name": "Name",
+        "diameter": "Diameter",
+        "climate": "Climate",
+        "gravity": "Gravity",
+        "terrain": "Terrain",
+        "population": "Population"
+      }
+    },
+    "detail": {
+      "title": "Planet"
+    }
+  },
+  "pageNotFound": {
+    "title": "404",
+    "subtitle": "Oops. Nothing here..."
+  },
+  "globals": {
+    "title": "QU challenge",
+    "grid": {
+      "filterInput": {
+        "label": "Filter data",
+        "placeholder": "Ex. test"
+      },
+      "noMatchingDataText": "No data matching the filter {value}",
+      "actions": "Actions"
+    },
+    "buttons": {
+      "backHome": "Go Home"
+    },
+    "enums": {},
+    "locales": {
+      "es": "Spanish",
+      "en": "English"
+    }
+  }
+}

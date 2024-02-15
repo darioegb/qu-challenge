@@ -1,0 +1,41 @@
+{
+  "planets": {
+    "title": "Planetas",
+    "grid": {
+      "columns": {
+        "name": "Nombre",
+        "diameter": "Diametro",
+        "climate": "Clima",
+        "gravity": "Gravedad",
+        "terrain": "Terreno",
+        "population": "Población"
+      }
+    },
+    "detail": {
+      "title": "Planeta"
+    }
+  },
+  "pageNotFound": {
+    "title": "404",
+    "subtitle": "Ups. Nada por aquí..."
+  },
+  "globals": {
+    "title": "QU desafio",
+    "grid": {
+      "filterInput": {
+        "label": "Filtrar datos",
+        "placeholder": "Ej. test"
+      },
+      "noMatchingDataText": "No hay datos que coincidan con el filtro {value}",
+      "actions": "Acciones"
+    },
+    "buttons": {
+      "backHome": "Ir a inicio"
+    },
+    "enums": {},
+    "locales": {
+      "es": "Español",
+      "en": "Ingles"
+    }
+  }
+}
