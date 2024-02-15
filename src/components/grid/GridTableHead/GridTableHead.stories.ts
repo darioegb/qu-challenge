@@ -7,18 +7,8 @@ export default {
   title: 'Components/Grid/GridTableHead',
   component: GridTableHead,
   argTypes: {
-    onAddItemClicked: {
-      action: 'additemClick',
-      table: {
-        disable: true,
-      },
-    },
     tableProps: {
       description: 'Columns values',
-    },
-    additemClick: {
-      description: 'Fired when add button is clicked',
-      control: false,
     },
   },
   parameters: {
@@ -27,7 +17,7 @@ export default {
         component: 'GridTableHead is header row grid with add button',
       },
       source: {
-        code: '<grid-table-head :table-props="props" @additem-click="handlerAddOrEditOrView" />',
+        code: '<grid-table-head :table-props="props" />',
         language: 'html',
       },
     },
@@ -36,13 +26,11 @@ export default {
 
 const Template: StoryFn<typeof GridTableHead> = ({
   tableProps: { cols },
-  onAddItemClicked,
 }: Record<string, Record<string, unknown>>) => ({
   components: { GridTableHead },
   setup() {
     const columns = [...(cols as unknown[])];
     return {
-      onAddItemClicked,
       columns,
     };
   },
@@ -50,7 +38,6 @@ const Template: StoryFn<typeof GridTableHead> = ({
     <template #header="props">
       <GridTableHead
         :table-props="props"
-        @additem-click="onAddItemClicked"
        />
     </template>
   </q-table>`,
